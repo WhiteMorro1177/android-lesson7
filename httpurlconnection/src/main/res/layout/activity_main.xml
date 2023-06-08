@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="get coordinates"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,10 +65,30 @@
         android:id="@+id/textViewCoordinates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="36dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewWeather"
+        app:layout_constraintEnd_toEndOf="@+id/textViewWeather"
+        app:layout_constraintStart_toStartOf="@+id/textViewWeather" />
+
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonData"
+        app:layout_constraintEnd_toEndOf="@+id/buttonData"
+        app:layout_constraintStart_toStartOf="@+id/buttonData" />
+
+    <Button
+        android:id="@+id/buttonWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="get weather"
+        app:layout_constraintEnd_toEndOf="@+id/buttonData"
+        app:layout_constraintStart_toStartOf="@+id/buttonData"
+        app:layout_constraintTop_toBottomOf="@+id/buttonData" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
